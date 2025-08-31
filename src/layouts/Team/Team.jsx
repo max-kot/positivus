@@ -7,42 +7,42 @@ import Button from "@/components/Button/Button";
 export default () => {
 	const team = [
 		{
-			"photo": "src/assets/images/team/image-1.jpg",
+			"photo": "src/assets/images/team/team-1.jpg",
 			"name": "John Smith",
 			"position": "CEO and Founder",
 			"linkedIn": "#",
 			"bio": "10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy",
 		},
 		{
-			"photo": "src/assets/images/team/image-2.jpg",
+			"photo": "src/assets/images/team/team-2.jpg",
 			"name": "Jane Doe",
 			"position": "Director of Operations",
 			"linkedIn": "#",
 			"bio": "7+ years of experience in project management and team leadership. Strong organizational and communication skills",
 		},
 		{
-			"photo": "src/assets/images/team/image-3.jpg",
+			"photo": "src/assets/images/team/team-3.jpg",
 			"name": "Michael Brown",
 			"position": "Senior SEO Specialist",
 			"linkedIn": "#",
 			"bio": "5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization",
 		},
 		{
-			"photo": "src/assets/images/team/image-4.jpg",
+			"photo": "src/assets/images/team/team-4.jpg",
 			"name": "Emily Johnson",
 			"position": "PPC Manager",
 			"linkedIn": "#",
 			"bio": "3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis",
 		},
 		{
-			"photo": "src/assets/images/team/image-5.jpg",
+			"photo": "src/assets/images/team/team-5.jpg",
 			"name": "Brian Williams",
 			"position": "Social Media Specialist",
 			"linkedIn": "#",
 			"bio": "4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement",
 		},
 		{
-			"photo": "src/assets/images/team/image-6.jpg",
+			"photo": "src/assets/images/team/team-6.jpg",
 			"name": "Sarah Kim",
 			"position": "Content Creators",
 			"linkedIn": "#",

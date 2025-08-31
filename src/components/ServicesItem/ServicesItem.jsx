@@ -10,7 +10,7 @@ export default ({ data, className }) => {
 			<a className="box box--shadow services-item__link-wrapper" href={href}>
 				<h3 className="h3 services-item__title"><span className="marked">{title}</span></h3>
 				<figure className="services-item__image" aria-hidden="true">
-					<Picture src={image} />
+					<Picture src={image} formats={['avif', 'webp']}/>
 				</figure>
 				<Link className="services-item__link" tagName="span">Learn more</Link>
 			</a>
