@@ -1,0 +1,15 @@
+@use "@/scss/tools" as *;
+
+.soc1als {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--gap-s);
+
+	&__item {
+	}
+
+	&__link {
+		
+	}
+}

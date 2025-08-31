@@ -1,0 +1,14 @@
+@use "@/scss/tools" as *;
+
+.image-box {
+	--object-fit: cover;
+	--object-pos: center;
+	img,
+	source,
+	picture {
+		position: absolute;
+		inset: 0;
+		object-fit: var(--object-fit);
+		object-position: var(--object-pos);
+	}
+}

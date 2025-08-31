@@ -1,0 +1,51 @@
+@use "@/scss/tools" as *;
+
+.testimonial {
+	$triangle-size: adapt(30, 20);
+
+	&__content {
+		padding: adapt(40, 24);
+		border-radius: var(--bd-radius-l);
+		border: 1px solid var(--color-green);
+		position: relative;
+		&:not(:last-child) {
+			margin-bottom: adapt(50, 30);
+		}
+		&::before,
+		&::after {
+			content: "";
+			@include triangle($triangle-size, var(--color-green));
+			position: absolute;
+			bottom: 0px;
+			left: 50px;
+			z-index: 1;
+			transform: translateY(100%);
+		}
+
+		&::before {
+			bottom: 1px;
+			z-index: 2;
+			@include triangle($triangle-size, var(--color-dark));
+		}
+
+		p {
+			position: relative;
+
+			&::before,
+			&::after {
+				content: "\"";
+			}
+		}
+	}
+
+	&__meta {
+		padding-left: adapt(80, 60);
+	}
+
+	&__author {
+		color: var(--color-green);
+	}
+
+	&__position {
+	}
+}

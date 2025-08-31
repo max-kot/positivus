@@ -1,0 +1,32 @@
+@use "@/scss/tools" as *;
+
+.team {
+	&__container {
+		display: grid;
+	}
+	&__heading {
+	}
+
+	&__list {
+		list-style-type: none;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(308px, 1fr));
+		gap: adapt(40, 24);
+		&:not(:last-child) {
+			margin-bottom: adapt(40, 24);
+		}
+	}
+
+	&__item {
+	}
+
+	&__btn.btn{
+		min-width: 256px;
+		margin-left: auto;
+		justify-content: center;
+
+		@include media($mobile-m) {
+			width: 100%;
+		}
+	}
+}

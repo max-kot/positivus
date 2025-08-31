@@ -1,0 +1,49 @@
+@use "@/scss/tools" as *;
+
+.cta {
+	&__inner {
+		display: flex;
+		gap: adapt(40, 24);
+		justify-content: space-between;
+		align-items: center;
+
+		@include media($mobile) {
+			flex-direction: column;
+		}
+	}
+	&__content {
+		flex: 0 1 500px;
+		display: grid;
+		gap: var(--gap-m);
+		@include media($mobile) {
+			flex: 1 1 100%;
+			justify-items: center;
+			text-align: center;
+		}
+	}
+
+	&__title {
+	}
+
+	&__description {
+	}
+
+	&__btn {
+		justify-self: start;
+		align-self: start;
+		@include media($mobile) {
+			justify-self: center;
+			align-self: center;
+		}
+	}
+
+	&__image {
+		margin-block: -100px;
+		padding-right: 8%;
+
+			@include media($mobile) {
+				margin-block: unset;
+				padding-right: unset;
+			}
+	}
+}

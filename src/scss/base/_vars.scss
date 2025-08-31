@@ -1,0 +1,51 @@
+@use "../tools" as *;
+
+:root {
+	// Colors
+	--color-green: #b9ff66;
+	--color-grey: #f3f3f3;
+	--color-dark-grey: #898989;
+	--color-dark: #191a23;
+	--color-dark-2: #292A32;
+	--color-black: #000;
+	--color-white: #fff;
+
+	// Container
+	--container-width: 1234px;
+	--container-padding: 16px; //! даже если контейнер на весь экран, отступы оставь а ширину сделай на 100%
+
+	// Border radius
+	--bd-radius-s: 8px;
+	--bd-radius: 14px;
+	--bd-radius-l: 46px;
+
+	// Shadows
+	--shadow: 0 5px 0 0 var(--color-dark);
+
+	// Fonts
+	--font-size-html: 100%; // 1rem = 1px ===> calc(1 / 16 * 100%)
+	--font-size: adapt(18, 16);
+	--font-family-main: "SpaceGrotesk-VF", sans-serif;
+
+	&[lang=ru] {
+		// поменять шрифт
+	}
+
+	// Transitions speed
+	--duration-fast: 0.3s;
+	--duration-medium: 0.5s;
+	--duration-slow: 0.8s;
+
+	// Other
+	--header-height: #{rem(55)};
+
+	// Gaps
+	--gap-xs: 8px;
+	--gap-s: 16px;
+	--gap-m: 24px;
+	--gap-mx: 35px;
+	--gap: 40px;
+	--gap-l: 70px;
+	--gap-xl: 100px;
+	--gap-xxl: 120px;
+}

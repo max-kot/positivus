@@ -1,0 +1,76 @@
+@use "@/scss/tools" as *;
+
+.teammate {
+	background: var(--color-white);
+	padding: adapt(40, 24);
+
+	@include hover {
+		.teammate__image {
+			img,
+			picture,
+			source {
+				filter: unset;
+				transform: scale(1.03);
+			}
+			&::after {
+				opacity: 0;
+			}
+		}
+	}
+
+	&__header {
+		display: flex;
+		gap: var(--gap-m);
+		border-bottom: 1px solid var(--color-black);
+		&:not(:last-child) {
+			padding-bottom: var(--gap-m);
+			margin-bottom: var(--gap-m);
+		}
+	}
+
+	&__image-wrapper {
+		filter: drop-shadow(8px 8px 0 var(--color-dark));
+	}
+	&__image {
+		position: relative;
+		@include square(100px);
+		mask-image: url("src/assets/icons/mask.svg");
+		img,
+		picture,
+		source {
+			filter: grayscale(100%) saturate(2) brightness(1.1);
+			transition: all ease-in-out var(--duration-fast);
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			z-index: 2;
+			inset: 0;
+			background-color: var(--color-green);
+			mix-blend-mode: multiply; /* чтобы картинка подсвечивалась цветом */
+			transition: all ease-in-out var(--duration-fast);
+		}
+	}
+
+	&__meta {
+		display: grid;
+		width: 100%;
+	}
+
+	&__name {
+		order: 2;
+	}
+
+	&__position {
+		order: 3;
+		font-size: 16px;
+	}
+
+	&__link {
+		order: 1;
+		justify-self: end;
+	}
+
+	&__bio {
+	}
+}

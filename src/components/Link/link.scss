@@ -1,0 +1,34 @@
+@use "@/scss/tools" as *;
+
+.btn-link {
+	--icon-bg: var(--color-dark);
+	--icon-color: var(--color-green);
+
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	gap: var(--gap-s);
+	font-size: adapt(20, 18);
+	color: inherit;
+
+
+
+	.icon {
+		@include square(adapt(41, 35));
+		background: var(--icon-bg);
+		color: var(--icon-color);
+		padding: 10px;
+		border-radius: 100%;
+		transition: transform var(--duration-fast);
+	}
+
+		&--reverse {
+		.icon {
+			order: 1;
+			padding: unset;
+			background: transparent;
+			color: currentColor;
+			@include square(24px);
+		}
+	}
+}

@@ -1,0 +1,86 @@
+@use "@/scss/tools" as *;
+
+.testimonials {
+	&__heading {
+	}
+
+	&__slider {
+		background: var(--color-dark);
+		color: var(--color-white);
+		padding-block: adapt(70, 40);
+		border-radius: var(--bd-radius-l);
+
+		@include media($mobile) {
+			padding-inline: 24px;
+		}
+	}
+}
+.testimonials-slider {
+	&__swiper {
+	}
+
+	&__navigation {
+		&:not(:first-child) {
+			margin-top: adapt(100, 40);
+		}
+	}
+}
+.slider-navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: adapt(40, 24);
+	max-width: 564px;
+	margin-inline: auto;
+
+	&__btn {
+		background: unset;
+		border: none;
+		@include square(40px);
+		opacity: 0.3;
+
+		transition: opacity var(--duration-fast);
+
+		@include hover {
+			opacity: 1;
+		}
+
+		.icon {
+			@include square(24px);
+			transform: rotate(30deg);
+		}
+	}
+
+	&__btn--prev {
+		.icon {
+			@include square(24px);
+			transform: rotate(210deg);
+		}
+	}
+
+	&__pagination {
+		display: flex;
+
+		@include media($mobile) {
+			display: none;
+		}
+
+		.swiper-pagination-bullet {
+			background: unset;
+			border: none;
+			padding: var(--gap-s);
+			color: var(--color-white);
+			transition: all var(--duration-fast);
+
+			@include hover {
+				transform: scale(0.8);
+			}
+		}
+		.swiper-pagination-bullet-active {
+			color: var(--color-green);
+		}
+	}
+
+	&__btn--next {
+	}
+}

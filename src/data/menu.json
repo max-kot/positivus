@@ -1,0 +1,22 @@
+[
+	{
+		"text": "About us",
+		"href": "#about"
+	},
+	{
+		"text": "Services",
+		"href": "#services"
+	},
+	{
+		"text": "Use Cases",
+		"href": "#cases"
+	},
+	{
+		"text": "Pricing",
+		"href": "#pricing"
+	},
+	{
+		"text": "Blog",
+		"href": "#blog"
+	}
+]

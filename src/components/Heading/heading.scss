@@ -1,0 +1,27 @@
+@use "@/scss/tools" as *;
+
+.heading {
+	display: flex;
+	gap: adapt(40, 16);
+	align-items: center;
+
+	@include media($mobile-m) {
+		flex-direction: column;
+		align-items: start;
+	}
+
+	&:not(:last-child) {
+		margin-bottom: adapt(70, 24);
+	}
+	&__title {
+	}
+
+	&__description {
+		flex: 0 1 580px;
+		text-wrap: balance;
+
+		@include media($mobile-m) {
+			flex: auto;
+		}
+	}
+}

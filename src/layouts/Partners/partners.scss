@@ -1,0 +1,17 @@
+@use "@/scss/tools" as *;
+
+.partners {
+	&__container {
+		overflow: hidden;
+	}
+	&__list {
+		list-style-type: none;
+		display: flex;
+		gap: var(--gap-xl);
+	}
+
+	&__item {
+		flex-shrink: 0;
+		filter: grayscale(100%);
+	}
+}

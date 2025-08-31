@@ -1,0 +1,52 @@
+@use "@/scss/tools" as *;
+
+.hero {
+	padding-top: adapt(30, 0);
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: adapt(40, 0, $mobile);
+
+		@include media($mobile) {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			gap: 30px;
+		}
+	}
+	&__content {
+		flex: 0 1 530px;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		gap: adapt(40, 24);
+
+		@include media($mobile) {
+			flex: auto;
+			align-items: center;
+		}
+	}
+
+	&__title {
+	}
+
+	&__description {
+		font-size: adapt(20, 18);
+		line-height: 140%;
+	}
+
+	&__btn {
+	}
+
+	&__image {
+		flex: 0 1 600px;
+		@include media($mobile) {
+			flex: auto;
+		}
+		svg {
+			width: 100%;
+		}
+	}
+}

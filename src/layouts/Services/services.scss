@@ -1,0 +1,18 @@
+@use "@/scss/tools" as *;
+
+.services {
+	&__heading {
+		
+	}
+
+	&__list {
+		list-style-type: none;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: adapt(40, 24);
+
+		@include media($mobile) {
+			grid-template-columns: auto;
+		}
+	}
+}

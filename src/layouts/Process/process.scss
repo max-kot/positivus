@@ -1,0 +1,17 @@
+@use "@/scss/tools" as *;
+
+.process {
+	&__heading {
+	}
+
+	&__list {
+		list-style-type: none;
+		display: grid;
+		gap: adapt(40, 24);
+
+		@include counter(true, "* > .spoiler__title")
+	}
+
+	&__item {
+	}
+}

@@ -1,0 +1,20 @@
+@use "@/scss/tools" as *;
+
+.case {
+	display: grid;
+	gap: var(--gap-s);
+
+	&__description {
+	}
+
+	&__link.btn-link {
+		color: var(--color-green);
+		transition: color var(--duration-fast);
+		@include hover {
+			color: var(--color-white);
+			.icon {
+				transform: rotate(30deg);
+			}
+		}
+	}
+}

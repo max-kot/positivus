@@ -1,0 +1,44 @@
+@use "@/scss/tools" as *;
+.cases {
+	&__heading {
+	}
+
+	&__list {
+		list-style-type: none;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: adapt(120, 24);
+		background: var(--color-dark);
+		color: var(--color-white);
+
+		@include media($mobile) {
+			grid-template-columns: auto;
+			gap: 24px;
+		}
+	}
+
+	&__item {
+		position: relative;
+		&:not(:last-child) {
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: calc(#{adapt(120, 24)} / -2 );
+				transform: translateX(50%);
+				width: 1px;
+				height: 100%;
+				background: var(--color-white);
+
+				@include media($mobile) {
+					display: none;
+				}
+			}
+
+			@include media($mobile) {
+				padding-bottom: 24px;
+				border-bottom: 1px solid var(--color-white);
+			}
+		}
+	}
+}

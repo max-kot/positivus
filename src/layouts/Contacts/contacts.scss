@@ -1,0 +1,63 @@
+@use "@/scss/tools" as *;
+
+.contacts {
+	overflow: hidden;
+
+	&__container {
+	}
+
+	&__heading {
+	}
+
+	&__content {
+		padding: adapt(70, 24) adapt(100, 24);
+		display: flex;
+		align-items: center;
+		overflow: hidden;
+
+		@include media($mobile) {
+			flex-direction: column;
+		}
+	}
+
+	&__form {
+		flex: 0 1 556px;
+
+		@include media($mobile) {
+			flex: 1 1 100%;
+			width: 100%;
+		}
+	}
+
+	&__image {
+		transform: translateX(60%);
+	}
+}
+
+.form {
+	display: grid;
+	gap: adapt(40, 24);
+	align-content: start;
+
+	&__checkbox-box {
+		display: flex;
+		gap: var(--gap);
+	}
+
+	&__input-box {
+		display: grid;
+		gap: var(--gap-m);
+	}
+
+	&__input-field {
+		.input-field__textarea {
+			height: 190px;
+			resize: none;
+		}
+	}
+
+	&__btn {
+		justify-content: center;
+		text-align: center;
+	}
+}

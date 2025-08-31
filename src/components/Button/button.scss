@@ -1,0 +1,59 @@
+@use "@/scss/tools" as *;
+
+.btn {
+	text-decoration: none;
+	color: var(--color-white);
+	background: var(--color-dark);
+	padding: 20px fluid(35, 24);
+	display: inline-flex;
+	text-align: left;
+	border-radius: var(--bd-radius);
+	font-size: fluid(20, 18);
+	border: 1px solid var(--color-dark);
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	align-items: center;
+	transition: color var(--duration-fast);
+
+	@include hover {
+		color: var(--color-black);
+
+		&::after {
+			transform: scale(2.5);
+		}
+	}
+
+	span {
+		position: relative;
+		z-index: 2;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: -50%;
+		width: 100%;
+		aspect-ratio: 1;
+		transform: scale(0);
+		background: var(--color-green);
+		border-radius: 100%;
+		transition: transform var(--duration-medium);
+	}
+	&--accent {
+		color: var(--color-black);
+
+		&::after {
+			transform: scale(2.5);
+		}
+
+		@include hover {
+			color: var(--color-white);
+
+			&::after {
+				transform: scale(0);
+			}
+		}
+	}
+}

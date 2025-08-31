@@ -1,0 +1,167 @@
+@use "@/scss/tools" as *;
+
+.footer {
+	padding-bottom: unset;
+
+	&__container {
+		border-bottom-left-radius: unset;
+		border-bottom-right-radius: unset;
+		background: var(--color-dark);
+		color: var(--color-white);
+		padding: adapt(40, 24) adapt(40, 10);
+	}
+
+	&__top,
+	&__middle,
+	&__bottom {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: adapt(40, 16);
+
+		@include media($mobile) {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+
+	&__top {
+		&:not(:last-child) {
+			margin-bottom: adapt(70, 30);
+		}
+	}
+
+	&__logo {
+		flex-shrink: 0;
+	}
+
+	&__menu {
+		@include media($mobile) {
+			flex: 1 1 100%;
+			.menu__list {
+				justify-content: center;
+			}
+		}
+	}
+
+	&__middle {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: adapt(40, 24);
+		&:not(:last-child) {
+			padding-bottom: adapt(40, 24);
+			margin-bottom: adapt(40, 24);
+			border-bottom: 1px solid var(--color-white);
+		}
+	}
+
+	&__contacts {
+		flex: 0 1 360px;
+		@include media($mobile) {
+			flex: 1 1 100%;
+		}
+	}
+
+	&__title {
+		&:not(:last-child) {
+			margin-bottom: var(--gap-m);
+		}
+	}
+
+	&__contacts-list {
+	}
+
+	&__subscribe-form {
+		flex: 0 1 660px;
+		border-radius: var(--bd-radius);
+		background: var(--color-dark-2);
+
+		@include media($mobile) {
+			flex: 1 1 100%;
+		}
+	}
+
+	&__copy {
+		font-size: inherit;
+	}
+
+	&__year {
+		color: var(--color-green);
+	}
+
+	&__link-list {
+	}
+}
+.contacts-info {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap-s);
+	@include media($mobile) {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	&__item {
+		display: flex;
+		gap: var(--gap-xs);
+	}
+	&__text {
+	}
+
+	&__link {
+		color: inherit;
+		text-decoration: none;
+
+		address {
+			font-style: normal;
+		}
+	}
+}
+.subscribe-form {
+	display: flex;
+	gap: var(--gap-s);
+	flex-wrap: wrap;
+
+	&__input-field {
+		flex: 1 1 auto;
+
+		.input-field__input {
+			border-color: var(--color-white);
+			background: transparent;
+		}
+	}
+
+	&__input-btn {
+		flex-shrink: 0;
+		@include media($mobile-l) {
+			flex-grow: 1;
+			justify-content: center;
+			text-align: center;
+		}
+	}
+}
+
+.creators-list {
+	list-style-type: none;
+	display: flex;
+	gap: adapt(24, 16);
+
+	@include media($mobile) {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	&__item {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--gap-xs);
+	}
+
+	&__text {
+	}
+
+	&__link {
+		text-decoration: none;
+		color: var(--color-green);
+	}
+}
