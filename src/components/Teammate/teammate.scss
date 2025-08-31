@@ -34,7 +34,11 @@
 	&__image {
 		position: relative;
 		@include square(100px);
-		mask-image: url("src/assets/icons/mask.svg");
+		mask-image: url("../images/mask.svg");
+		mask-repeat: no-repeat;
+		mask-position: center;
+		mask-size: contain;
+
 		img,
 		picture,
 		source {
