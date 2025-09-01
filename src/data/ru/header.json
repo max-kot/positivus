@@ -3,7 +3,7 @@
 	"burgerLabel": "Открыть / закрыть меню",
 	"switchBtn": {
 		"text": "Switch to english version",
-		"href": "/en",
+		"href": "./en",
 		"lang": "en"
 	}
 }
