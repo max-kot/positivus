@@ -3,19 +3,15 @@ import "./hero.scss";
 import Button from "@/components/Button/Button"
 import Section from "@/components/Section"
 
-export default () => {
+export default ({ data }) => {
+	const { title, text, btn } = data.hero;
+
 	return (
 		<Section className="hero">
 			<div className="hero__content">
-				<h1 className="hero__title h1">
-					Navigating the digital landscape for success
-				</h1>
-				<p className="hero__description">
-					Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.
-				</p>
-				<Button className="hero__btn" href="#contact">
-					Book a consultation
-				</Button>
+				<h1 className="hero__title h1">{title}</h1>
+				<p className="hero__description">{text}</p>
+				<Button className="hero__btn" href="#contact">{btn}</Button>
 			</div>
 			<figure className="hero__image" data-mouse-parallax>
 				<svg width="601" height="515" viewBox="0 0 601 515" fill="none" xmlns="http://www.w3.org/2000/svg">

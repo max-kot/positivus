@@ -1,0 +1,22 @@
+[
+	{
+		"text": "О нас",
+		"href": "#about"
+	},
+	{
+		"text": "Услуги",
+		"href": "#services"
+	},
+	{
+		"text": "Кейсы",
+		"href": "#cases"
+	},
+	{
+		"text": "Цены",
+		"href": "#pricing"
+	},
+	{
+		"text": "Блог",
+		"href": "#blog"
+	}
+]

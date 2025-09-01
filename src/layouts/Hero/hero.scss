@@ -1,7 +1,7 @@
 @use "@/scss/tools" as *;
 
 .hero {
-	padding-top: adapt(30, 0);
+	padding-top: 30px;
 
 	&__container {
 		display: flex;

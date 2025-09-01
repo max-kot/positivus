@@ -1,0 +1,9 @@
+{
+	"btn": "Узнать цену",
+	"burgerLabel": "Открыть / закрыть меню",
+	"switchBtn": {
+		"text": "Switch to english version",
+		"href": "/en",
+		"lang": "en"
+	}
+}

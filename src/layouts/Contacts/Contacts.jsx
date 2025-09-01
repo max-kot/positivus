@@ -4,25 +4,23 @@ import Heading from "@/components/Heading/Heading";
 import Checkbox from "@/components/Checkbox/Checkbox";
 import Button from "@/components/Button/Button";
 import InputField from "@/components/InputField/InputField";
+import { parseBrToJsx } from "@/utils/parseBrToJsx";
 
-export default () => {
+export default ({ data }) => {
+	const { title, text, checkboxes, inputs, btn } = data.contacts;
+
 	return (
 		<Section className="contacts">
-			<Heading className="contacts__heading" title="Contact Us">
-				Connect with Us: Let's Discuss Your <br /> Digital Marketing Needs
-			</Heading>
+			<Heading className="contacts__heading" title={title}>{parseBrToJsx(text)}</Heading>
 			<div className="contacts__content box">
 				<form className="contacts__form form">
 					<div className="form__checkbox-box">
-						<Checkbox type="radio" name="purpose" value="Say Hi" checked>Say Hi</Checkbox>
-						<Checkbox type="radio" name="purpose" value="Get a Quote">Get a Quote</Checkbox>
+						{checkboxes.map(({ value, text, isChecked }) => <Checkbox type="radio" name="purpose" value={value} isChecked={isChecked} key={text}>{text}</Checkbox>)}
 					</div>
 					<div className="form__input-box">
-						<InputField className="form__input-field" type="text" id="name" label="How is your name?" placeholder="Name" />
-						<InputField className="form__input-field" type="email" id="email" label="What is your email?*" placeholder="Email" required />
-						<InputField className="form__input-field" tagName="textarea" id="message" label="How we can help you?*" placeholder="Message" required />
+						{inputs.map(({type, id, label, placeholder, isRequired}) => <InputField className="form__input-field" type={type} id={id} label={label} placeholder={placeholder} isRequired={isRequired} key={id}/>)}
 					</div>
-					<Button className="form__btn" type="submit">Send Message</Button>
+					<Button className="form__btn" type="submit">{btn}</Button>
 				</form>
 				<div className="contacts__image">
 					<svg data-mouse-parallax width="692" height="650" viewBox="0 0 692 650" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -21,9 +21,8 @@ body {
 	background: var(--color-white);
 
 	line-height: 140%;
-
-	.open-menu &{
+	
+	.open-menu & {
 		overflow: hidden;
 	}
 }
-

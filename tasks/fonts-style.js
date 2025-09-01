@@ -2,7 +2,8 @@ import fs from 'fs';
 import path from 'path';
 
 // Папка с шрифтами
-const fontsDir = 'public/fonts';
+const fontsDir = 'src/assets/fonts';
+const buildDir = 'fonts'
 // Файл для подключения шрифтов
 const fontsScssFile = 'src/scss/base/_fonts.scss';
 const variableSuffix = '-VF';

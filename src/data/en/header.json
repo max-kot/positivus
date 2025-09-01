@@ -1,0 +1,9 @@
+{
+	"btn": "Request a quote",
+	"burgerLabel": "Open / close menu",
+	"switchBtn": {
+		"text": "Перейти на русскую версию",
+		"href": "../",
+		"lang": "ru"
+	}
+}

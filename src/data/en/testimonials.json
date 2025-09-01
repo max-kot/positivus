@@ -1,0 +1,50 @@
+{
+	"title": "Testimonials",
+	"text": "Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services",
+	"btns": {
+		"prev": "Previous review",
+		"next": "Next review"
+	},
+	"list": [
+		{
+			"name": "Sofia Kovalyova",
+			"position": "Marketing Director at Creative Studio PixelArt",
+			"text": "Working with Positivus completely changed the way we approach digital marketing. They took the time to understand our brand, our audience, and our goals, and created a strategy that not only increased traffic but also brought real engagement. The team is professional, responsive, and full of creative ideas — I can’t recommend them enough!"
+		},
+		{
+			"name": "Sergey Nikitin",
+			"position": "CEO at Tech Startup SmartHome Solutions",
+			"text": "Positivus has been a true partner in our growth. Their campaigns were not only innovative but also data-driven, which helped us reach new audiences and increase conversions. They constantly monitor performance and optimize every detail, making sure the results keep improving."
+		},
+		{
+			"name": "Marina Orlova",
+			"position": "Brand Manager at Fashion Brand LuxeWear",
+			"text": "From the very beginning, Positivus impressed us with their professionalism and creativity. They helped us define a clear marketing strategy, implement it seamlessly, and continuously refine it based on real data. The team is always available to answer questions and suggest new ideas, which makes working with them enjoyable and effective."
+		},
+		{
+			"name": "Nikolay Belyaev",
+			"position": "Business Development Manager at Consulting Firm BizGrowth",
+			"text": "The Positivus team goes above and beyond. They are not just executing campaigns — they think strategically, helping us see opportunities we hadn’t considered. The attention to detail, continuous optimization, and clear communication make them stand out in the digital marketing space."
+		},
+		{
+			"name": "Evgeny Gromov",
+			"position": "Fitness Director at Fitness Studio FitZone",
+			"text": "Positivus delivered more than we expected. They created strategies tailored to our needs, executed them flawlessly, and continuously monitored performance to optimize results. The team is creative, insightful, and proactive — we truly feel they are invested in our success."
+		},
+		{
+			"name": "Polina Vasilieva",
+			"position": "Manager at E-commerce Company EcoShop",
+			"text": "Thanks to Positivus, our online sales and overall engagement have increased significantly. Their team understands the nuances of digital marketing and adapts quickly to trends and changes. They made the entire process smooth, transparent, and results-driven."
+		},
+		{
+			"name": "Victoria Lebedeva",
+			"position": "Marketing Lead at Restaurant Tasty Corner",
+			"text": "Working with Positivus was a game-changer. They brought fresh ideas, clear strategies, and consistent updates that helped us grow our online presence and attract more customers. I especially appreciate their transparency and detailed reporting — it makes collaboration easy and productive."
+		},
+		{
+			"name": "Dmitry Ivanov",
+			"position": "Operations Manager at Travel Agency ExploreNow",
+			"text": "I’ve worked with several marketing teams before, but Positivus stands out. Their approach is thorough, creative, and results-focused. They don’t just run campaigns; they analyze, optimize, and constantly improve to ensure the best possible outcomes. It feels like they genuinely care about our growth."
+		}
+	]
+}

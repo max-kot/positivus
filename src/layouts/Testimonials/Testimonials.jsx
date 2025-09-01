@@ -36,62 +36,19 @@ const params = {
 }
 
 
-export default () => {
-	const slides = [
-		{
-			"name": "John Smith",
-			"position": "Marketing Director at XYZ Corp",
-			"text": "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
-		},
-		{
-			"name": "John Smith",
-			"position": "Marketing Director at XYZ Corp",
-			"text": "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
-		},
-		{
-			"name": "John Smith",
-			"position": "Marketing Director at XYZ Corp",
-			"text": "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
-		},
-		{
-			"name": "John Smith",
-			"position": "Marketing Director at XYZ Corp",
-			"text": "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
-		},
-		{
-			"name": "John Smith",
-			"position": "Marketing Director at XYZ Corp",
-			"text": "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
-		},
-		{
-			"name": "John Smith",
-			"position": "Marketing Director at XYZ Corp",
-			"text": "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
-		},
-		{
-			"name": "John Smith",
-			"position": "Marketing Director at XYZ Corp",
-			"text": "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
-		},
-		{
-			"name": "John Smith",
-			"position": "Marketing Director at XYZ Corp",
-			"text": "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
-		},
-	]
+export default ({ data }) => {
+	const { title, text, btns, list } = data.testimonials;
 	return (
 		<Section className="testimonials">
-			<Heading className="testimonials__heading" title="Testimonials">
-				Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services
-			</Heading>
+			<Heading className="testimonials__heading" title={title}>{text}</Heading>
 			<div className="testimonials__slider testimonials-slider">
-				<Slider className="testimonials-slider__swiper" slides={slides} component={Testimonial} params={params}>
+				<Slider className="testimonials-slider__swiper" slides={list} component={Testimonial} params={params}>
 					<nav className="testimonials-slider__navigation slider-navigation">
-						<button className="slider-navigation__btn slider-navigation__btn--prev" data-slider-btn-prev>
+						<button className="slider-navigation__btn slider-navigation__btn--prev" data-slider-btn-prev aria-label={btns.prev} title={btns.prev}>
 							<Icon iconId="arrow" />
 						</button>
 						<div className="slider-navigation__pagination" data-slider-pagination></div>
-						<button className="slider-navigation__btn slider-navigation__btn--next" data-slider-btn-next>
+						<button className="slider-navigation__btn slider-navigation__btn--next" data-slider-btn-next aria-label={btns.next} title={btns.next}>
 							<Icon iconId="arrow" />
 						</button>
 					</nav>

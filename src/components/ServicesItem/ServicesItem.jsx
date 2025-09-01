@@ -3,7 +3,7 @@ import "./services-item.scss";
 import Link from "../Link/Link";
 import { Picture } from "minista";
 
-export default ({ data, className }) => {
+export default ({ data, className, btnText }) => {
 	const { href, title, image, type } = data;
 	return (
 		<li className={clsx("services-item", className, type)}>
@@ -12,7 +12,7 @@ export default ({ data, className }) => {
 				<figure className="services-item__image" aria-hidden="true">
 					<Picture src={image} formats={['avif', 'webp']}/>
 				</figure>
-				<Link className="services-item__link" tagName="span">Learn more</Link>
+				<Link className="services-item__link" tagName="span">{btnText}</Link>
 			</a>
 		</li>
 	)

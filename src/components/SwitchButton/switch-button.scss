@@ -1,0 +1,10 @@
+@use "@/scss/tools" as *;
+
+.switch-button {
+	position: fixed;
+	bottom: var(--container-padding);
+	right: container-padding();
+	z-index: 3;
+	padding: adapt(16, 16);
+	font-weight: 500;
+}

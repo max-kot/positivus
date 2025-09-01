@@ -1,35 +1,41 @@
+import { Image } from "minista";
 import "./partners.scss";
 
 import Section from "@/components/Section";
 
-export default () => {
-	const partners = [
+export default ({ data }) => {
+	const { title } = data.partners;
+	const list = [
 		{
-			icon: "src/assets/images/partners/logo-1.svg", label: "Amazon",
+			"icon": "/src/assets/images/partners/partners-1.png",
+			"label": "Amazon"
 		},
 		{
-			icon: "src/assets/images/partners/logo-2.svg", label: "dribble",
+			"icon": "/src/assets/images/partners/partners-2.png",
+			"label": "dribble"
 		},
 		{
-			icon: "src/assets/images/partners/logo-3.svg", label: "HubSpot",
+			"icon": "/src/assets/images/partners/partners-3.png",
+			"label": "HubSpot"
 		},
 		{
-			icon: "src/assets/images/partners/logo-4.svg", label: "Notion",
+			"icon": "/src/assets/images/partners/partners-4.png",
+			"label": "Notion"
 		},
 		{
-			icon: "src/assets/images/partners/logo-5.svg", label: "Netflix",
+			"icon": "/src/assets/images/partners/partners-5.png",
+			"label": "Netflix"
 		},
 		{
-			icon: "src/assets/images/partners/logo-6.svg", label: "Zoom",
-		},
+			"icon": "/src/assets/images/partners/partners-6.png",
+			"label": "Zoom"
+		}
 	]
 	return (
 		<Section className="partners">
-			<h2 className="visually-hidden">
-				Our partners
-			</h2>
+			<h2 className="visually-hidden">{title}</h2>
 			<ul className="partners__list" data-running-line>
-				{partners.map(({ icon, label }) => <li className="partners__item" key="label" data-running-line-item><img src={icon} alt={label} title={label}/></li>)}
+				{list.map(({ icon, label }) => <li className="partners__item" key="label" data-running-line-item><Image src={icon} alt={label} title={label} /></li>)}
 			</ul>
 		</Section>
 	)

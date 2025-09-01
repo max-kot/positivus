@@ -1,0 +1,49 @@
+{
+	"title": "Team",
+	"text": "Meet the skilled and experienced team behind our successful digital marketing strategies",
+	"btn": "See all team",
+	"list": [
+		{
+			"photo": "src/assets/images/team/team-1.jpg",
+			"name": "Dmitry Ivanov",
+			"position": "CEO and Founder",
+			"linkedIn": "#",
+			"bio": "10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy"
+		},
+		{
+			"photo": "src/assets/images/team/team-2.jpg",
+			"name": "Anastasia Morozova",
+			"position": "Director of Operations",
+			"linkedIn": "#",
+			"bio": "7+ years of experience in project management and team leadership. Strong organizational and communication skills"
+		},
+		{
+			"photo": "src/assets/images/team/team-3.jpg",
+			"name": "Alexander Kuznetsov",
+			"position": "Senior SEO Specialist",
+			"linkedIn": "#",
+			"bio": "5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization"
+		},
+		{
+			"photo": "src/assets/images/team/team-4.jpg",
+			"name": "Victoria Lebedeva",
+			"position": "PPC Manager",
+			"linkedIn": "#",
+			"bio": "3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis"
+		},
+		{
+			"photo": "src/assets/images/team/team-5.jpg",
+			"name": "Ilya Petrov",
+			"position": "Social Media Specialist",
+			"linkedIn": "#",
+			"bio": "4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement"
+		},
+		{
+			"photo": "src/assets/images/team/team-6.jpg",
+			"name": "Elena Smirnova",
+			"position": "Content Creators",
+			"linkedIn": "#",
+			"bio": "2+ years of experience in writing and editing. Skilled in creating compelling, SEO-optimized content for various industries"
+		}
+	]
+}

@@ -1,0 +1,44 @@
+{
+	"contacts": {
+		"title": "Свяжитесь с нами:",
+		"list": [
+			{
+				"title": "Электронная почта:",
+				"href": "mailto:info@positivus.com",
+				"text": "info@positivus.com"
+			},
+			{
+				"title": "Телефон:",
+				"href": "tel:5555678901",
+				"text": "555-567-8901"
+			},
+			{
+				"title": "Адрес:",
+				"href": "https://www.google.com/maps/place/%D0%90%D0%BD%D1%82%D0%B0%D1%80%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/@-75.05435,0,3z/data=!3m1!4b1!4m6!3m5!1s0xa4b9967b3390754b:0x6e52be1f740f2075!8m2!3d-75.250973!4d-0.071389!16s%2Fm%2F06wc8yw?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D",
+				"text": "1234 Main St Moonstone City, Stardust State 12345",
+				"isAddress": true
+			}
+		]
+	},
+	"subscribe": {
+		"id": "subscribe-mail",
+		"type": "email",
+		"placeholder": "Электронная почта",
+		"isRequired": true,
+		"btn": "Подписаться на новости"
+	},
+	"copy": "Positivus. Все права защищены.",
+	"year": 2023,
+	"creators": [
+		{
+			"title": "Дизайн:",
+			"href": "https://www.olgaskuja.design/",
+			"text": "olgaskuja.design"
+		},
+		{
+			"title": "Разработка:",
+			"href": "https://www.github.com/max-kot/",
+			"text": "<maxkot>"
+		}
+	]
+}

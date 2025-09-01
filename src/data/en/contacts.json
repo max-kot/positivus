@@ -1,0 +1,38 @@
+{
+	"title": "Contact Us",
+	"text": "Connect with Us: Let's Discuss Your <br /> Digital Marketing Needs",
+	"checkboxes": [
+		{
+			"text": "Say Hi",
+			"value": "Say Hi",
+			"isChecked": true
+		},
+		{
+			"text": "Get a Quote",
+			"value": "Get a Quote"
+		}
+	],
+	"inputs": [
+		{
+			"type": "text",
+			"id": "name",
+			"label": "How is your name?",
+			"placeholder": "Name"
+		},
+		{
+			"type": "email",
+			"id": "email",
+			"label": "What is your email?*",
+			"placeholder": "Email",
+			"isRequired": true
+		},
+		{
+			"type": "textarea",
+			"id": "message",
+			"label": "How can we help you?*",
+			"placeholder": "Message",
+			"isRequired": true
+		}
+	],
+	"btn": "Send Message"
+}

@@ -1,0 +1,43 @@
+{
+	"title": "Services",
+	"text": "At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:",
+	"btn": "Learn more",
+	"list": [
+		{
+			"title": "Search engine optimization",
+			"image": "src/assets/images/services/image-1.png",
+			"href": "#",
+			"type": ""
+		},
+		{
+			"title": "Pay-per-click advertising",
+			"image": "src/assets/images/services/image-2.png",
+			"href": "#",
+			"type": "accent"
+		},
+		{
+			"title": "Social Media Marketing",
+			"image": "src/assets/images/services/image-3.png",
+			"href": "#",
+			"type": "dark"
+		},
+		{
+			"title": "Email Marketing",
+			"image": "src/assets/images/services/image-4.png",
+			"href": "#",
+			"type": ""
+		},
+		{
+			"title": "Content Creation",
+			"image": "src/assets/images/services/image-5.png",
+			"href": "#",
+			"type": "accent"
+		},
+		{
+			"title": "Analytics and Tracking",
+			"image": "src/assets/images/services/image-6.png",
+			"href": "#",
+			"type": "dark"
+		}
+	]
+}

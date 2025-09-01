@@ -1,0 +1,43 @@
+{
+	"title": "Услуги",
+	"text": "В нашем агентстве цифрового маркетинга мы предлагаем ряд услуг, которые помогают компаниям расти и добиваться успеха в Интернете. Эти услуги включают:",
+	"btn": "Подробнее",
+	"list": [
+		{
+			"title": "Поисковая оптимизация",
+			"image": "src/assets/images/services/image-1.png",
+			"href": "#",
+			"type": ""
+		},
+		{
+			"title": "Реклама с оплатой за клик",
+			"image": "src/assets/images/services/image-2.png",
+			"href": "#",
+			"type": "accent"
+		},
+		{
+			"title": "Маркетинг в социальных сетях",
+			"image": "src/assets/images/services/image-3.png",
+			"href": "#",
+			"type": "dark"
+		},
+		{
+			"title": "Email-маркетинг",
+			"image": "src/assets/images/services/image-4.png",
+			"href": "#",
+			"type": ""
+		},
+		{
+			"title": "Создание контента",
+			"image": "src/assets/images/services/image-5.png",
+			"href": "#",
+			"type": "accent"
+		},
+		{
+			"title": "Аналитика и отслеживание",
+			"image": "src/assets/images/services/image-6.png",
+			"href": "#",
+			"type": "dark"
+		}
+	]
+}

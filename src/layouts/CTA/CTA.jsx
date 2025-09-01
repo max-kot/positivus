@@ -2,18 +2,15 @@ import "./cta.scss";
 import Section from "@/components/Section";
 import Button from "@/components/Button/Button";
 
-export default () => {
+export default ({ data }) => {
+	const { title, text, btn } = data.cta
 	return (
 		<Section className="cta">
 			<div className="cta__inner box">
 				<div className="cta__content">
-					<h2 className="h3 cta__title">
-						Let’s make things happen
-					</h2>
-					<p className="cta__description">
-						Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.
-					</p>
-					<Button className="cta__btn" href="#contacts">Get your free proposal</Button>
+					<h2 className="h3 cta__title">{title}</h2>
+					<p className="cta__description">{text}</p>
+					<Button className="cta__btn" href="#contacts">{btn}</Button>
 				</div>
 				<figure className="cta__image" aria-hidden="true" data-mouse-parallax>
 					<svg width="359" height="395" viewBox="0 0 359 395" fill="none" xmlns="http://www.w3.org/2000/svg">

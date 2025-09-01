@@ -5,16 +5,14 @@ import favicon32 from '@/assets/favicons/favicon-32x32.png'
 import favicon16 from '@/assets/favicons/favicon-16x16.png'
 import manifest from '@/assets/favicons/site.webmanifest'
 
-import Header from "@/layouts/Header/Header";
-import Footer from "@/layouts/Footer/Footer";
-import Main from './layouts/Main'
+import Body from './layouts/Body';
 
 export default (props) => {
-	const { children, title, url } = props
+	const { children, title, url, lang = "ru" } = props
 
 	return (
 		<>
-			<Head htmlAttributes={{ lang: 'en' }}>
+			<Head htmlAttributes={{ lang: lang, class: lang }}>
 				<title>{title}</title>
 				<script src="/src/js/main.js" type="module" />
 				<link rel="apple-touch-icon" sizes="180x180" href={appleTouchIcon} />
@@ -22,11 +20,9 @@ export default (props) => {
 				<link rel="icon" type="image/png" sizes="16x16" href={favicon16} />
 				<link rel="manifest" href={manifest} />
 			</Head>
-			<div className="wrapper">
-				<Header />
-				<Main>{children}</Main>
-				<Footer />
-			</div>
+			<Body lang={lang}>
+				{children}
+			</Body>
 		</>
 	)
 }
